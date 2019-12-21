@@ -3,7 +3,8 @@
 // @version      0.1
 // @description  Add repository_dispatch trigger for Github Actions
 // @author       Texot
-// @include      https://github.com/tete1030/github-repo-dispatcher
+// @namespace    https://github.com/tete1030/github-repo-dispatcher
+// @homepage     https://github.com/tete1030/github-repo-dispatcher
 // @require      https://code.jquery.com/jquery-latest.min.js
 // @match        https://github.com/*/*
 // @grant        GM_getValue
