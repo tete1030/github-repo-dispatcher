@@ -1,15 +1,19 @@
 Github Repository Dispatcher
 ============================================================================
 
-Trigger Github repository dispatch event with a click
+A Tampermonkey userscript for triggering Github repository dispatch event with one click
 
 ![Screenshot](imgs/btn.png)
 ![Screenshot](imgs/type.png)
 ![Screenshot](imgs/payload.png)
 
+## Prerequisite
+
+Tampermonkey / Greasemonkey
+
 ## Usage
 
-1. Install the script by copying or from Greasefork.
+1. Install the script by copying or from [Greasefork](https://greasyfork.org/en/scripts/394032-github-repository-dispatch-trigger).
 2. Get github personal access token with repo permissions. Copy it.
 3. Open the repo you want to trigger repo dispatch event.
 4. Click the "Repo Dispatch" button.
