@@ -13,24 +13,29 @@ Tampermonkey / Greasemonkey
 
 ## Usage
 
-1. Install the script by copying or from [Greasefork](https://greasyfork.org/en/scripts/394032-github-repository-dispatch-trigger).
-2. Get github personal access token with repo permissions. Copy it.
-3. Open the repo you want to trigger deployments or repo dispatch event.
+1. Install Tampermonkey or Greasemonkey in your favorite browser.
+2. Install the script by copying or from [Greasefork](https://greasyfork.org/en/scripts/394032-github-repository-dispatch-trigger).
+3. Get github personal access token with repo permissions. Copy it.
+4. Open the repo you want to trigger deployments or repo dispatch event.
 
 ### For `repository_dispatch` event
-4. Click the "Repo Dispatch" button.
-5. At the first time, you will be asked to input your personal access token.
-6. Input your dispatch type (or any name you want. The name can be used to identify the event in Github Actions).
-7. Input your dispatch payload (optional, in `json`. E.g. `{"debug": true}`).
+5. Click the "Repo Dispatch" button.
+6. At the first time, you will be asked to input your personal access token.
+7. Input your dispatch type (or any name you want. The name can be used to identify the event in Github Actions).
+8. Input your dispatch payload (optional, in `json`. E.g. `{"debug": true}`).
 
 ### For `deployments` event
-4. Click the "Deploy" button.
-5. At the first time, you will be asked to input your personal access token.
-6. Input your task name (or any name you want. The name can be used to identify the event in Github Actions).
-7. Input the ref of your deploy, it can be branches/tags/commits
-8. Input your dispatch payload (optional, in `json`. E.g. `{"debug": true}`).
+5. Click the "Deploy" button.
+6. At the first time, you will be asked to input your personal access token.
+7. Input the ref for your deploy, it can be branches/tags/commits
+8. Input your task name (or any name you want. The name can be used to identify the event in Github Actions).
+9. Input your dispatch payload (optional, in `json`. E.g. `{"debug": true}`).
 
 ## Documentations
 
 * [`repository_dispatch` in Github Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#external-events-repository_dispatch)
+* [`deployment` in Github Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#deployment-event-deployment)
 * [Create a repository dispatch event](https://developer.github.com/v3/repos/#create-a-repository-dispatch-event)
+* [Create a deployment](https://developer.github.com/v3/repos/deployments/#create-a-deployment)
+* [RepositoryDispatchEvent](https://developer.github.com/v3/activity/events/types/#repositorydispatchevent)
+* [DeploymentEvent](https://developer.github.com/v3/activity/events/types/#deploymentevent)
