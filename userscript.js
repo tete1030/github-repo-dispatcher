@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Github Deployments and Repository Dispatch Trigger
-// @version      0.2
+// @version      0.3
 // @description  Trigger deployment or repository_dispatch event for Github Actions
 // @author       Texot
 // @namespace    https://github.com/tete1030/github-repo-dispatcher
@@ -77,9 +77,14 @@
             auto_merge: false,
             task: task,
             required_contexts: [],
-            description: "Created by Github Deployments and Repository Dispatch Trigger",
-            payload: payload
+            description: "Created by Github Deployments and Repository Dispatch Trigger"
         };
+        try {
+            if (payload) data.payload = JSON.parse(payload);
+        } catch (e) {
+            window.alert("JSON parse failed: " + e.message);
+            return;
+        }
         GM_xmlhttpRequest({
             method: "POST",
             url: "https://api.github.com/repos/" + pathArray[1] + "/" + pathArray[2] + "/deployments",

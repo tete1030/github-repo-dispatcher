@@ -14,7 +14,7 @@ Tampermonkey / Greasemonkey
 ## Usage
 
 1. Install Tampermonkey or Greasemonkey in your favorite browser.
-2. Install the script by copying or from [Greasefork](https://greasyfork.org/en/scripts/394032-github-repository-dispatch-trigger).
+2. Install the script from [Greasefork](https://greasyfork.org/en/scripts/394032-github-repository-dispatch-trigger) (Recommended, as you can receive updates) or by copying.
 3. Get github personal access token with repo permissions. Copy it.
 4. Open the repo you want to trigger deployments or repo dispatch event.
 
